@@ -1,0 +1,691 @@
+/**EEEFE0 gris claro
+D1D8BE gris mas oscuro
+A7C1A8 gris pare
+819A91 gris mas fuerte**/
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #EEEFE0;
+    box-sizing: border-box;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+
+}
+
+/** NAVBAR**/
+
+
+.foto-logo {
+    width: 60px;
+}
+
+.nav-bg {
+    background-color: #819A91;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar div div ul li a {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar div div ul li .acti {
+    font-family: "Savate", sans-serif;
+}
+
+
+.navbar a:hover {
+    color: whitesmoke;
+}
+
+main {
+    width: 100%;
+    min-height: 150vh;
+}
+
+.content-front {
+    background-image: url(../assets/primera-page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #819A91;
+}
+
+.content-front h1 {
+    font-family: "Roboto", sans-serif;
+    color: whitesmoke;
+    font-size: 5em;
+    text-shadow: 0px 0px 15px black;
+    text-transform: capitalize;
+}
+
+.content-front h2 {
+    font-family: "Roboto", sans-serif;
+    color: whitesmoke;
+    font-size: 2em;
+    text-shadow: 0px 0px 25px black;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/** CARDS**/
+
+.title-cards {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 50px;
+    border-radius: 25px;
+    border: 2px solid #819A91;
+
+}
+
+.container-cards {
+    width: 100%;
+    min-height: 1200px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-cards .cards {
+    width: 330px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #819A91;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    border: 1px solid #819A91;
+
+}
+
+.container-cards .cards:hover {
+    transform: translate(-15px);
+    box-shadow: 0px 12px 16px #819A91;
+}
+
+.container-cards .cards img {
+    object-fit: cover;
+    width: 330px;
+    height: 240px;
+}
+
+
+.container-cards .cards h2 {
+    text-shadow: 1px 1px 15px #819A91;
+    padding-top: 5px;
+    text-transform: capitalize;
+
+}
+
+.container-cards .cards p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.container-cards .cards a {
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #1b5085;
+}
+
+.container-cards .cards a:hover {
+    padding-right: 10px;
+}
+
+/** FOOTER **/
+
+.cont-footer {
+    max-width: 1200px;
+    margin: o auto;
+}
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+    background-color: #819A91;
+    padding: 30px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4 {
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.footer-link ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 15px;
+    transition: all 0, 3s ease;
+}
+
+.footer-link ul li a:hover {
+    padding-left: 6px;
+    color: #00c3ff;
+}
+
+.networks-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: antiquewhite;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #819A91;
+    transition: all 0.5s ease;
+}
+
+.networks-link a:hover {
+    background-color: #00c3ff;
+}
+
+/** NOSOTROS**/
+
+/**BANNER**/
+
+.banner-nosotros {
+    background-image: url(../assets/foto-store2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid #819A91;
+    border-radius: 25px;
+    margin: 20px 5%;
+    padding: 30px;
+    box-shadow: 0px 12px 16px #819A91;
+}
+
+.banner-nosotros h2 {
+    color: whitesmoke;
+    text-shadow: 0px 0px 30px black;
+    overflow: hidden;
+
+}
+
+.text-nosotros {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/**GRILLA**/
+
+.section-nosotros {
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 20px;
+    margin: 40px 5%;
+}
+
+.section-nosotros div {
+
+    height: 300px;
+}
+
+.box2,
+.box3,
+.box6 {
+    grid-column: span 2;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+
+.section-nosotros div img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #819A91;
+    box-shadow: 0px 12px 30px #819A91;
+}
+
+.box2,
+.box6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 37px 72px 37px 91px;
+    background-color: #819A91;
+    box-shadow: 10px 10px 5px 0px #819A91;
+    border-bottom: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+}
+
+
+/** PRODUCTOS **/
+
+/**GLOBOS**/
+
+.balloons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px;
+}
+
+.balloons .box-ball {
+    width: 15%;
+    height: 200px;
+    transition: all 2s ease;
+}
+
+.balloons .box-ball img {
+    width: 100%;
+    height: 200px;
+    border-radius: 149px 149px 149px 149px;
+    object-fit: cover;
+    box-shadow: 2px 1px 174px 4px #819A91;
+
+}
+
+.balloons .box-ball:hover {
+    scale: 1.2;
+}
+
+.balloons .box-ball h3 {
+    text-align: center;
+}
+
+/** BUSCADOR**/
+
+.searcher {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 80px;
+}
+
+.searcher div {
+    margin: 20px;
+}
+
+.searcher div input {
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    border: 3px solid #819A91;
+    box-shadow: 2px 1px 174px 4px #819A91;
+    outline: none;
+}
+
+.searcher div i {
+    font-size: 40px;
+    color: #819A91;
+}
+
+.searcher div i:hover {
+    color: #00c3ff;
+}
+
+/**GRILLA CARTASA**/
+
+.grid-cards {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-cards .cards-pro {
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #819A91;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.25s;
+    border: 1px solid #819A91;
+
+
+
+}
+
+.grid-cards .cards-pro:hover {
+    transform: translate(-15px);
+    box-shadow: 0px 12px 16px #819A91;
+}
+
+.grid-cards div h2 {
+    color: #819A91;
+    padding: 10px;
+}
+
+
+.grid-cards div h2:hover {
+    color: #00c3ff;
+}
+
+.grid-cards img {
+    object-fit: cover;
+    width: 100%;
+    height: 240px;
+}
+
+.grid-cards .cards-pro h2 {
+    color: black;
+    padding: 10px;
+}
+
+.grid-cards .cards-pro h3 {
+    padding: 5px;
+}
+
+.grid-cards .cards-pro h3:hover {
+    color: #00c3ff;
+}
+
+.grid-cards .cards-pro button {
+    background-color: #1b5085;
+    color: whitesmoke;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #819A91;
+    font-family: "Savate", sans-serif;
+}
+
+.grid-cards .cards-pro button:active {
+    color: #00c3ff;
+}
+
+/**COMBOS**/
+
+.banner-combos {
+    background-image: url(../assets/foto-combos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 3px solid #819A91;
+}
+
+.banner-combos h2 {
+    color: whitesmoke;
+    font-size: 60px;
+    text-shadow: 0px 0px 30px black;
+}
+
+/** GRILLA COMBOS**/
+
+.grid-combos {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+}
+
+.grid-combos div {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
+.grid-combos .background-text {
+    text-align: center;
+    background-color: #9c8181;
+    border-radius: 26px 158px 84px 98px;
+    color: whitesmoke;
+    box-shadow: 10px 10px 5px 0px #A7C1A8;
+}
+
+.title-combos {
+    margin: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 30px black;
+}
+
+.title-combos h2 {
+    margin: 20px;
+}
+
+.grid-combos .background-photo img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    border: 3px outset #819A91;
+    box-shadow: 0px 16px 30px #819A91
+}
+
+.grid-combos .background-text button {
+    background-color: #1b5085;
+    color: whitesmoke;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #819A91;
+
+}
+
+.grid-combos .background-text button:hover {
+    scale: 1.1;
+    background-color: #e30c08;
+}
+
+/** CONTACTO**/
+
+.box-video {
+    width: 100%;
+    height: 400px;
+}
+
+
+.video {
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #819A91;
+}
+
+/** FORMULARIO **/
+
+.cont-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 600px;
+}
+
+.cont-form form {
+    padding: 25px 25px;
+    box-shadow: 0px 0px 20px #819A91;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.input-form h3 {
+    font-size: 30px;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.cont-form .input-form input,
+textarea {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 3px solid #819A91;
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.input-short {
+    display: flex;
+    padding-top: 20px;
+
+}
+
+.input-short label {
+    padding-bottom: 20px;
+}
+
+.boton {
+    background-color: #1b5085;
+    color: whitesmoke;
+
+}
+
+.poster {
+    background-color: #1b5085;
+    text-align: center;
+    width: 90%;
+    margin: 5%;
+    border-radius: 25px;
+    color: whitesmoke;
+    border: 3px solid #819A91;
+    box-shadow: 10px 10px 5px 0px #819A91;
+}
+
+.poster div img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.poster h4 {
+    padding: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .grid-cards {
+
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 200px;
+    }
+
+    .searcher {
+        display: none;
+    }
+
+    .balloons {
+        display: none;
+    }
+
+
+    .poster div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid-combos {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-row: 200px;
+    }
+
+    .section-nosotros {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 300px;
+    }
+}
