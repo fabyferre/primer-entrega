@@ -1,0 +1,91 @@
+// variables
+@use "../utility/variables" as *;
+
+// mixin 
+@use "../utility/mixin" as *;
+
+/* combos */
+
+main {
+    .banner-combos {
+        background-image: url(../assets/foto-combos.jpg);
+        @include Banner (100%, 300px);
+        @include flex;
+        @include border;
+
+        h2 {
+            color: $color-letrasclaras;
+            text-shadow: 0px 0px 30px $color-shadow;
+        }
+    }
+
+    .title-combos {
+        margin: 20px;
+        text-align: center;
+        text-shadow: 0px 0px 30px $color-shadow;
+
+        h2 {
+            margin: 20px;
+        }
+
+    }
+
+    .grid-combos {
+        @include grid (grid, 1fr, auto, 60px 40px);
+        width: 90%;
+        margin: 5%;
+
+        .background-photo {
+            img {
+                @include img (100%, 300px);
+                border-radius: 20px;
+                @include border;
+                box-shadow: 0px 16px 30px $color-principal;
+            }
+        }
+
+        .background-text {
+            @include flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: $color-fondocombos;
+            border-radius: 20px;
+            color: $color-letrasclaras;
+            box-shadow: 5px 5px 5px 0px $color-principal;
+            height: 300px;
+            @include border;
+            font-size: 20px;
+
+            button {
+                background-color: $color-botones;
+                color: $color-letrasclaras;
+                width: 50%;
+                height: 40px;
+                border-radius: 20px;
+                @include border;
+
+                &:hover {
+                    scale: 1.1;
+                    background-color: $color-hoverboton;
+                }
+            }
+        }
+    }
+
+}
+
+/* media queries */
+
+
+
+
+@media (min-width: 1024px) {
+  main {
+    .grid-combos{
+         @include grid ( grid, repeat(2, 1fr), repeat(3, 1fr), 60px 40px );
+         .background-text {
+              border-radius: 26px 158px 84px 98px;
+         }
+    }
+  }
+}

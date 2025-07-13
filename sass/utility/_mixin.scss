@@ -1,0 +1,47 @@
+@use "../utility/variables" as *;
+// con parametros
+@mixin grid ( $grid, $columns,$rows, $gap ){
+    display: $grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+//sin parametros
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// con/sin parametros
+@mixin img ($width, $height){
+    width:$width;
+    height: $height;
+    object-fit: cover;
+}
+
+// texto baner home
+@mixin texto  {
+    color: $color-letrasclaras;
+    text-shadow: 0px 0px 5px $color-shadow;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+//banners 
+@mixin Banner ($width, $height) {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: $width;
+    height: $height;
+}
+
+// border 
+@mixin border {
+    border: 3px solid $color-principal;
+}
+
+//border cards
+@mixin bor-cards {
+     border: 2px solid $color-principal;
+}

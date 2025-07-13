@@ -1,0 +1,110 @@
+// variables
+@use "../utility/variables" as *;
+
+// mixin 
+@use "../utility/mixin" as *;
+
+
+/* NOSOTROS */
+
+main {
+    .banner-nosotros {
+        background-image: url(../assets/foto-store2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 90%;
+        height: 500px;
+        border: 3px solid $color-principal;
+        border-radius: 25px;
+        margin: 20px 5%;
+        padding: 30px;
+        box-shadow: 0px 12px 16px $color-principal;
+
+        h2 {
+            color: $color-letrasclaras;
+            text-shadow: 0px 0px 5px $color-shadow;
+
+        }
+    }
+
+    .text-nosotros {
+        text-align: center;
+        padding-top: 20px;
+        @include border;
+        box-shadow: -2px 1px 68px -2px $color-principal inset;
+    }
+}
+
+/* grilla */
+
+.section-nosotros {
+    width: 90%;
+    @include grid(grid, 1fr, auto, 20px);
+    margin: 40px 5%;
+    align-content: center;
+
+    div {
+        height: 300px;
+
+        img {
+            @include flex;
+            @include img (100%, 300px);
+            border-radius: 20px;
+            @include border;
+            box-shadow: 0px 12px 30px $color-principal;
+        }
+    }
+
+    .box2,
+    .box6 {
+
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 37px 72px 37px 91px;
+        background-color: $color-principal;
+        box-shadow: 10px 10px 5px 0px $color-principal;
+        border-bottom: 3px solid $color-letrasclaras;
+        border-right: 3px solid $color-letrasclaras;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .section-nosotros {
+        width: 90%;
+        @include grid(grid, repeat(auto-fit, minmax(300px, 3fr)), repeat(3, 1fr), 20px);
+        margin: 40px 5%;
+
+        .box2,
+        .box3,
+        .box6 {
+            grid-column: span 2;
+            overflow: hidden;
+
+        }
+
+        .box2,
+        .box6 {
+            @include flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 37px 72px 37px 91px;
+            background-color: $color-principal;
+            box-shadow: 10px 10px 5px 0px $color-principal;
+            border-bottom: 3px solid $color-letrasclaras;
+            border-right: 3px solid $color-letrasclaras;
+        }
+
+    }
+}

@@ -1,0 +1,217 @@
+// variables
+@use "../utility/variables" as *;
+
+// mixin 
+@use "../utility/mixin" as *;
+
+main {
+    .balloons {
+        display: none;
+    }
+
+    .searcher {
+        @include flex;
+
+        div {
+            form {
+                input {
+                    border-radius: 20px;
+                    @include border;
+                    box-shadow: 2px 1px 174px 4px $color-principal;
+                    outline: none;
+                    width: 300px;
+                    height: 40px;
+                    margin-top: 10px;
+                }
+            }
+
+        }
+
+        div {
+            i {
+                font-size: 35px;
+                color: $color-principal;
+
+                &:hover {
+                    color: $color-hoverletras;
+                }
+            }
+        }
+    }
+
+    .grid-cards {
+        @include grid (grid, 350px, 200px, 10px);
+        margin-left: 30px;
+        width: 100%;
+        text-align: center;
+
+        div {
+            h2 {
+                text-shadow: 4px 4px 2px $color-principal;
+                text-align: center;
+
+            }
+        }
+
+        .cards-pro {
+            height: 430px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 2px $color-principal;
+            margin: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.25s;
+            @include bor-cards;
+
+            &:hover {
+                transform: translate(-5px);
+                box-shadow: 0px 12px 16px $color-principal;
+
+            }
+
+
+
+            h4 {
+                padding: 10px;
+                padding: 10px;
+
+                &:hover {
+                    color: $color-hoverletras;
+                }
+            }
+
+            img {
+                @include img (100%, 240px);
+            }
+
+            h3 {
+                padding: 5px;
+            }
+
+            button {
+                background-color: $color-botones;
+                color: $color-letrasclaras;
+                width: 50%;
+                height: 40px;
+                border-radius: 20px;
+                @include bor-cards;
+                font-family: "Savate", sans-serif;
+
+                &:active {
+                    background-color: $color-hoverboton;
+                }
+            }
+        }
+    }
+}
+
+
+/* media  queries */
+
+
+@media (min-width: 1024px) {
+    main {
+        .balloons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 30px;
+
+            .box-ball {
+                width: 15%;
+                height: 200px;
+                transition: all 3s ease;
+
+                img {
+                    @include img (100%, 200px);
+                    border-radius: 149px 149px 149px 149px;
+                    box-shadow: 2px 1px 174px 4px $color-principal;
+
+                    &:hover {
+                        scale: 1.1;
+                        @include border;
+                    }
+                }
+
+                h3 {
+                    text-align: center;
+                     text-shadow: 4px 4px 2px $color-principal;
+
+                    &:hover {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+
+        .searcher {
+            @include flex;
+            align-items: center;
+            margin: 80px;
+
+            div {
+                margin: 20px;
+
+                form {
+                    input {
+                        border-radius: 20px;
+                        @include border;
+                        box-shadow: 2px 1px 174px 4px $color-principal;
+                        outline: none;
+                        width: 500px;
+                        height: 50px;
+                        margin-top: 10px;
+                    }
+                }
+
+            }
+
+            div {
+                i {
+                    font-size: 40px;
+                    color: $color-principal;
+
+                    &:hover {
+                        color: $color-hoverletras;
+                    }
+                }
+            }
+        }
+
+        .grid-cards {
+            @include grid (grid, repeat(4, 1fr), repeat(6, 1fr), 20px);
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            .cards-pro {
+                &:hover {
+                     transform: translate(-15px);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        .grid-cards {
+            margin: 0;
+            @include grid (grid, repeat(3, 1fr),auto, 5px);
+            
+
+            .cards-pro {  
+                &:hover{
+                    transform: translate(-5px);
+                }
+            }
+            .span {
+                    grid-column: span 3;
+                
+            }
+
+        }
+    }
+
+
+}
