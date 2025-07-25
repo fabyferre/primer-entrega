@@ -28,8 +28,11 @@ header nav div div ul li .nav-link:hover {
   color: whitesmoke;
 }
 
+main {
+  /* BANNER - HOME */
+}
 main .content-front {
-  background-image: url(../assets/primera-page.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/7h3xNdxb/primera-page.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,14 +57,16 @@ main .content-front div h2 {
   text-transform: capitalize;
   text-align: center;
 }
-main .title-cards {
+
+/* CARDS - HOME */
+.title-cards {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 20px;
 }
-main .title-cards h2 {
+.title-cards h2 {
   padding: 5px;
   margin: 10px 0px;
   border: 3px solid #819A91;
@@ -69,7 +74,7 @@ main .title-cards h2 {
   display: inline-block;
   text-align: center;
 }
-main .title-cards p {
+.title-cards p {
   padding: 10px;
   margin: 10px 0px;
   border: 3px solid #819A91;
@@ -78,16 +83,15 @@ main .title-cards p {
   text-align: center;
   font-size: 1.5em;
 }
-main .container-cards {
+
+.container-cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 20px;
   width: 100%;
-  margin-left: 25px;
 }
-main .container-cards div {
-  width: 80%;
+.container-cards div {
   border-radius: 10px;
   box-shadow: 0px 2px 2px #819A91;
   margin: 20px;
@@ -95,34 +99,34 @@ main .container-cards div {
   transition: all 0.25s;
   border: 1px solid #819A91;
 }
-main .container-cards div:hover {
+.container-cards div:hover {
   transform: translate(-1px);
   box-shadow: 0px 12px 16px #819A91;
 }
-main .container-cards div img {
+.container-cards div img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
-main .container-cards div h2 {
+.container-cards div h2 {
   text-shadow: 1px 1px 15px #819A91;
   padding-top: 5px;
   text-transform: capitalize;
 }
-main .container-cards div p {
+.container-cards div p {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
 }
-main .container-cards div a {
+.container-cards div a {
   font-weight: 500;
   padding-bottom: 10px;
   text-decoration: none;
   color: #00c3ff;
 }
-main .container-cards div a:hover {
+.container-cards div a:hover {
   padding-right: 10px;
 }
 
@@ -137,16 +141,15 @@ footer .cont-footer .footer-row {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50px 200px;
   gap: 10px;
-  align-content: center;
+  place-items: center;
 }
 footer .cont-footer .footer-row div h4 {
+  font-family: "Savate", sans-serif;
   font-size: 20px;
-  color: #1b5085;
+  color: whitesmoke;
   margin-bottom: 20px;
-  font-weight: 500;
-  padding-bottom: 10px;
-  margin-top: 5px;
-  padding-left: 30px;
+  font-weight: 600;
+  border-bottom: 3px solid whitesmoke;
 }
 footer .cont-footer .footer-row div ul li {
   list-style: none;
@@ -184,7 +187,7 @@ footer .cont-footer .footer-row .networks a:hover {
   background-color: #00c3ff;
 }
 
-/* media queries */
+/* MEDIA QUERIES - HOME */
 @media (min-width: 1024px) {
   main .container-cards {
     display: grid;
@@ -199,6 +202,7 @@ footer .cont-footer .footer-row .networks a:hover {
     box-shadow: 0px 12px 16px #819A91;
   }
 }
+/* MEDIA QUERIES - HOME TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
   main .container-cards {
     display: grid;
@@ -210,15 +214,18 @@ footer .cont-footer .footer-row .networks a:hover {
   }
 }
 /* NOSOTROS */
+main {
+  /* BANNER - NOSOTROS */
+}
 main .banner-nosotros {
-  background-image: url(../assets/foto-store2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/yN8zZWgJ/foto-store2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
   width: 90%;
@@ -240,7 +247,7 @@ main .text-nosotros {
   box-shadow: -2px 1px 68px -2px #819A91 inset;
 }
 
-/* grilla */
+/* GRILLA - NOSOTROS */
 .section-nosotros {
   width: 90%;
   display: grid;
@@ -279,6 +286,7 @@ main .text-nosotros {
   border-right: 3px solid whitesmoke;
 }
 
+/*  MEDIA QUERIES - NOSOTROS */
 @media (min-width: 1024px) {
   .section-nosotros {
     width: 90%;
@@ -309,15 +317,21 @@ main .text-nosotros {
     border-right: 3px solid whitesmoke;
   }
 }
+/* PRODUCTOS */
+main {
+  /* BALLOONS - PRODUCTOS - SE VISUALIZAN EN DESKTOP */
+}
 main .balloons {
   display: none;
 }
-main .searcher {
+
+/* SEARCHER - PRODUCTOS - BUSCADOR CON CARRO */
+.searcher {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .searcher div form input {
+.searcher div form input {
   border-radius: 20px;
   border: 3px solid #819A91;
   box-shadow: 2px 1px 174px 4px #819A91;
@@ -326,28 +340,30 @@ main .searcher div form input {
   height: 40px;
   margin-top: 10px;
 }
-main .searcher div i {
+.searcher div i {
   font-size: 35px;
   color: #819A91;
 }
-main .searcher div i:hover {
+.searcher div i:hover {
   color: #00c3ff;
 }
-main .grid-cards {
+
+/* CARDS - PRODUCTOS */
+.grid-cards {
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 1fr;
   grid-template-rows: 200px;
   gap: 10px;
-  margin-left: 30px;
-  width: 100%;
-  text-align: center;
+  place-items: center;
 }
-main .grid-cards div h2 {
+.grid-cards div h2 {
   text-shadow: 4px 4px 2px #819A91;
   text-align: center;
 }
-main .grid-cards .cards-pro {
+.grid-cards .cards-pro {
+  background-color: #F2EAE0;
   height: 430px;
+  width: 80%;
   border-radius: 10px;
   box-shadow: 0px 2px 2px #819A91;
   margin: 10px;
@@ -356,27 +372,27 @@ main .grid-cards .cards-pro {
   transition: all 0.25s;
   border: 2px solid #819A91;
 }
-main .grid-cards .cards-pro:hover {
+.grid-cards .cards-pro:hover {
   transform: translate(-5px);
   box-shadow: 0px 12px 16px #819A91;
 }
-main .grid-cards .cards-pro h4 {
+.grid-cards .cards-pro h4 {
   padding: 10px;
   padding: 10px;
 }
-main .grid-cards .cards-pro h4:hover {
+.grid-cards .cards-pro h4:hover {
   color: #00c3ff;
 }
-main .grid-cards .cards-pro img {
+.grid-cards .cards-pro img {
   width: 100%;
   height: 240px;
   object-fit: cover;
 }
-main .grid-cards .cards-pro h3 {
+.grid-cards .cards-pro h3 {
   padding: 5px;
 }
-main .grid-cards .cards-pro button {
-  background-color: #1b5085;
+.grid-cards .cards-pro button {
+  background-color: #1F4A5E;
   color: whitesmoke;
   width: 50%;
   height: 40px;
@@ -384,11 +400,12 @@ main .grid-cards .cards-pro button {
   border: 2px solid #819A91;
   font-family: "Savate", sans-serif;
 }
-main .grid-cards .cards-pro button:active {
-  background-color: #e30c08;
+.grid-cards .cards-pro button:hover {
+  scale: 1.1;
+  background-color: #0F2C3A;
 }
 
-/* media  queries */
+/* MEDIA QUERIES - PRODUCTOS- DESKTOP */
 @media (min-width: 1024px) {
   main .balloons {
     display: flex;
@@ -448,10 +465,10 @@ main .grid-cards .cards-pro button:active {
   }
   main .grid-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 200px 1fr 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
     gap: 20px;
-    width: 100%;
+    place-items: center;
     text-align: center;
     margin: 0;
   }
@@ -459,6 +476,7 @@ main .grid-cards .cards-pro button:active {
     transform: translate(-15px);
   }
 }
+/* MEDIA QUERIES - PRODUCTOS - TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
   main .grid-cards {
     margin: 0;
@@ -474,9 +492,12 @@ main .grid-cards .cards-pro button:active {
     grid-column: span 3;
   }
 }
-/* combos */
+/* COMBOS */
+main {
+  /* BANNER - COMBOS */
+}
 main .banner-combos {
-  background-image: url(../assets/foto-combos.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/foto-combos.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -499,7 +520,9 @@ main .title-combos {
 main .title-combos h2 {
   margin: 20px;
 }
-main .grid-combos {
+
+/* CARDS - COMBOS */
+.grid-combos {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -507,7 +530,7 @@ main .grid-combos {
   width: 90%;
   margin: 5%;
 }
-main .grid-combos .background-photo img {
+.grid-combos .background-photo img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -515,34 +538,34 @@ main .grid-combos .background-photo img {
   border: 3px solid #819A91;
   box-shadow: 0px 16px 30px #819A91;
 }
-main .grid-combos .background-text {
+.grid-combos .background-text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: #9c8181;
+  background-color: #F2EAE0;
   border-radius: 20px;
-  color: whitesmoke;
   box-shadow: 5px 5px 5px 0px #819A91;
   height: 300px;
   border: 3px solid #819A91;
   font-size: 20px;
 }
-main .grid-combos .background-text button {
-  background-color: #1b5085;
+.grid-combos .background-text button {
+  background-color: #1F4A5E;
   color: whitesmoke;
+  font-family: "Savate", sans-serif;
   width: 50%;
   height: 40px;
   border-radius: 20px;
   border: 3px solid #819A91;
 }
-main .grid-combos .background-text button:hover {
+.grid-combos .background-text button:hover {
   scale: 1.1;
-  background-color: #e30c08;
+  background-color: #0F2C3A;
 }
 
-/* media queries */
+/* MEDIA QUERIES - COMBOS */
 @media (min-width: 1024px) {
   main .grid-combos {
     display: grid;
@@ -554,7 +577,10 @@ main .grid-combos .background-text button:hover {
     border-radius: 26px 158px 84px 98px;
   }
 }
-/*contacto */
+/* CONTACTO*/
+main {
+  /* VIDEO - BANNER - CONTACTO */
+}
 main .box-video {
   width: 100%;
   height: 400px;
@@ -565,11 +591,14 @@ main .box-video video {
   object-fit: cover;
   border: 3px solid #819A91;
 }
-main .cont-form form {
+
+/* FORM - CONTACTO */
+.cont-form form {
   width: 97%;
   margin: 1.5%;
+  background-color: #F2EAE0;
 }
-main .cont-form form .input-form {
+.cont-form form .input-form {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -579,18 +608,18 @@ main .cont-form form .input-form {
   padding: 30px;
   box-shadow: 5px 5px 5px 0px #819A91;
 }
-main .cont-form form .input-form div h3 {
+.cont-form form .input-form div h3 {
   font-size: 30px;
   text-align: center;
   padding: 5px;
   text-shadow: 4px 4px 2px #819A91;
 }
-main .cont-form form .input-form div label {
+.cont-form form .input-form div label {
   font-size: 15px;
   margin-bottom: 10px;
   text-align: left;
 }
-main .cont-form form .input-form div input {
+.cont-form form .input-form div input {
   padding: 5px 10px;
   margin-bottom: 20px;
   border: 3px solid #819A91;
@@ -599,7 +628,7 @@ main .cont-form form .input-form div input {
   width: 100%;
   padding: 5px;
 }
-main .cont-form form .input-form div textarea {
+.cont-form form .input-form div textarea {
   padding: 5px 10px;
   margin-bottom: 20px;
   border: 3px solid #819A91;
@@ -607,23 +636,26 @@ main .cont-form form .input-form div textarea {
   border-radius: 20px;
   width: 100%;
 }
-main .cont-form form .input-form div .boton {
-  background-color: #1b5085;
+.cont-form form .input-form div .boton {
+  background-color: #1F4A5E;
   color: whitesmoke;
+  font-family: "Savate", sans-serif;
   width: 50%;
   margin-left: 25%;
 }
-main .cont-form form .input-form div .boton:hover {
+.cont-form form .input-form div .boton:hover {
   scale: 1.1;
-  background-color: #e30c08;
+  background-color: #0F2C3A;
 }
-main .cont-form form .input-form .input-short {
+.cont-form form .input-form .input-short {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1;
   gap: 5px;
 }
-main .poster {
+
+/* POSTER - CONTACTO */
+.poster {
   background-color: #1b5085;
   text-align: center;
   width: 80%;
@@ -634,10 +666,10 @@ main .poster {
   box-shadow: 5px 5px 5px 0px #819A91;
   text-shadow: 4px 4px 2px black;
 }
-main .poster .poster h4 {
+.poster .poster h4 {
   padding: 20px;
 }
-main .poster div img {
+.poster div img {
   width: 75px;
   height: 75px;
   object-fit: cover;
@@ -645,13 +677,14 @@ main .poster div img {
   margin-bottom: 10px;
 }
 
-/* media queries */
+/* MEDIA QUERIES - CONTACTO */
 @media (min-width: 1024px) {
   main .cont-form form {
     width: 80%;
     margin: 10%;
   }
 }
+/* MEDIA QUERIES - TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
   main .cont-form form {
     width: 90%;

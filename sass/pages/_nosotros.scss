@@ -1,22 +1,22 @@
-// variables
+// VARIABLES
 @use "../utility/variables" as *;
 
-// mixin 
+// MIXIN
 @use "../utility/mixin" as *;
 
 
 /* NOSOTROS */
 
 main {
+
+    /* BANNER - NOSOTROS */
     .banner-nosotros {
-        background-image: url(../assets/foto-store2.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.postimg.cc/yN8zZWgJ/foto-store2.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        display: flex;
+        @include flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         padding: 20px;
         width: 90%;
@@ -42,7 +42,7 @@ main {
     }
 }
 
-/* grilla */
+/* GRILLA - NOSOTROS */
 
 .section-nosotros {
     width: 90%;
@@ -79,6 +79,7 @@ main {
 
 }
 
+/*  MEDIA QUERIES - NOSOTROS */
 @media (min-width: 1024px) {
     .section-nosotros {
         width: 90%;

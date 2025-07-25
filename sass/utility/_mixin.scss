@@ -1,25 +1,25 @@
 @use "../utility/variables" as *;
-// con parametros
+// MIXIN GRID - con parametros
 @mixin grid ( $grid, $columns,$rows, $gap ){
     display: $grid;
     grid-template-columns: $columns;
     grid-template-rows: $rows;
     gap: $gap;
 }
-//sin parametros
+// MIXIN FLEX - sin parametros
 @mixin flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-// con/sin parametros
+// MIXIN IMAGEN - con/sin parametros
 @mixin img ($width, $height){
     width:$width;
     height: $height;
     object-fit: cover;
 }
 
-// texto baner home
+// MIXIN TEXTO BANNES 
 @mixin texto  {
     color: $color-letrasclaras;
     text-shadow: 0px 0px 5px $color-shadow;
@@ -27,7 +27,7 @@
     text-align: center;
 }
 
-//banners 
+// MIXIN BANNER FONDO  
 @mixin Banner ($width, $height) {
     background-size: cover;
     background-position: center;
@@ -36,12 +36,12 @@
     height: $height;
 }
 
-// border 
+// BORDES 
 @mixin border {
     border: 3px solid $color-principal;
 }
 
-//border cards
+// BORDES CARDS 
 @mixin bor-cards {
      border: 2px solid $color-principal;
 }

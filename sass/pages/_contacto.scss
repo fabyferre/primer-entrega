@@ -1,13 +1,15 @@
-// variables
+// VARIABLES
 @use "../utility/variables" as *;
 
-// mixin 
+// MIXIN 
 @use "../utility/mixin" as *;
 
 
-/*contacto */
+/* CONTACTO*/
 
 main {
+
+    /* VIDEO - BANNER - CONTACTO */
 
     .box-video {
         width: 100%;
@@ -19,11 +21,14 @@ main {
         }
 
     }
+}
 
+/* FORM - CONTACTO */
     .cont-form {
         form {
             width: 97%;
             margin: 1.5%;
+            background-color: $color-fondocombos;
 
 
             .input-form {
@@ -71,14 +76,15 @@ main {
                     }
 
                     .boton {
-                        background-color: $color-botones;
+                        background-color: $color-botones-base;
                         color: $color-letrasclaras;
+                         font-family: "Savate", sans-serif;
                         width: 50%;
                         margin-left: 25%;
 
                         &:hover {
                             scale: 1.1;
-                            background-color: $color-hoverboton;
+                            background-color:  $color-botones-hover;
                         }
 
                     }
@@ -94,6 +100,7 @@ main {
         }
     }
 
+    /* POSTER - CONTACTO */
     .poster {
         background-color: #1b5085;
         text-align: center;
@@ -118,10 +125,10 @@ main {
         }
     }
 
-}
 
 
-/* media queries */
+
+/* MEDIA QUERIES - CONTACTO */
 
 @media (min-width: 1024px) {
      main {
@@ -135,6 +142,7 @@ main {
     }
 }
 
+/* MEDIA QUERIES - TABLET */
 
 @media (min-width: 768px) and (max-width: 1024px) {
     main {
@@ -142,7 +150,6 @@ main {
             form {
                 width: 90%;
                 margin: 5%;
-
             }
         }
     }
