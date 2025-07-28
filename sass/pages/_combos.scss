@@ -10,7 +10,7 @@ main {
 
     /* BANNER - COMBOS */
     .banner-combos {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/foto-combos.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.postimg.cc/1XqgRZZH/foto-combos.jpg');
         @include Banner (100%, 300px);
         @include flex;
         @include border;
